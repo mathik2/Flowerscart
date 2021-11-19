@@ -1,0 +1,35 @@
+
+<div class="form">
+  <h1>Add New Bouquet Details</h1>
+    <div class="alert ">
+      <form [formGroup]="myForm" (ngSubmit)="AddFlower()">  
+        
+        <label class="form-control">Bouquet Name</label>
+        <input type="text" class="form-control" [(ngModel)]="flower.name" [formControl]="name">
+        <span *ngIf="name.valid==false && name.touched" class="alert alert-danger">
+          Name cannot be empty
+      </span>
+      <br>
+        <label class="form-control">Bouquet Description</label>
+        <input type="text" class="form-control" [(ngModel)]="flower.description" [formControl]="desc">
+        <span *ngIf="desc.valid==false && desc.touched" class="alert alert-danger">
+          Description cannot be empty
+      </span>
+      <br>
+        <label class="form-control">Bouquet Price</label>
+        <input type="number" class="form-control" [(ngModel)]="flower.price" [formControl]="price">
+        <span *ngIf="price.valid==false && price.touched" class="alert alert-danger">
+          Price cannot be empty
+      </span>
+      <br>
+        <label class="form-control">Bouquet Quantity</label>
+        <input type="number" class="form-control" [(ngModel)]="flower.qty" [formControl]="quant">
+        <span *ngIf="quant.valid==false && quant.touched" class="alert alert-danger">
+          Quantity cannot be empty
+      </span>
+      <br>
+       <span> <button class="btn btn-primary" >Add</button> </span>
+       <span class="btn"> <button class="btn btn-danger" >Reset</button> </span>
+      </form>
+    </div>
+    </div>

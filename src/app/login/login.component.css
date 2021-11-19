@@ -1,0 +1,28 @@
+label,input{
+    width: 300px;
+    font-size: 1.8rem;
+}
+label{
+    background-color: rgb(65, 221, 241);
+}
+.container{
+    width: 400px;
+    text-align: center;
+    padding: 35px;
+    margin-left: 36%;
+  font-weight: bolder;
+    color: white;
+}
+
+.imgContainer{
+    position: absolute;
+    z-index: -1;
+   
+   
+}
+img{
+    width: 340px;
+}
+h1{
+    padding-top: 20%;
+}

@@ -1,0 +1,31 @@
+
+
+<div>
+  <nav class="navbar ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Florist</a>
+      </div>
+      <ul class="nav navbar-nav">
+     
+
+     
+        <li><a routerLink="flower"> Add Flower</a></li>
+        <li><a routerLink="order" id="items" >Items</a></li>
+        <li><a routerLink="cart" id="cart">Cart</a></li>
+        <li><a routerLink="register" id="register">Register</a></li>
+        <li><a routerLink="login" id="login">Login</a></li>
+       <li><a routerLink="login" id="logout">LogOut</a></li>
+
+      </ul>
+    </div>
+  </nav>
+</div>
+<div id="body">
+ <img src="../assets/images/sunflower.jpeg" alt="flower" width="100%"/> 
+  <router-outlet></router-outlet>
+  <footer>CopyRights Reserved @Florist2021</footer>
+</div> 
+
+
+

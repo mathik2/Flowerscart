@@ -1,0 +1,11 @@
+.form{
+    width: 400px;
+    text-align: center;
+    padding: 35px;
+    background-color:rgba(67, 236, 25, 0.705);
+  text-align: center;
+height: 100vh;
+}label,input{
+    width: 300px;
+    font-size: 1.8rem;
+}

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="imgContainer">
+        <img src="../assets/images/redroseportrait.jpeg" >
+      </div> 
+    <h1>Login</h1>
+    <span class="form"> 
+     <div class="alert ">
+         <form [formGroup]="myForm" (ngSubmit)="register()"> 
+         <label class="form-control">ID</label>
+         <input type="text" class="form-control"   [(ngModel)]="user.id"  [formControl]="id" >
+         <span *ngIf="id.valid==false && id.touched" class="alert alert-danger">
+             Id cannot be empty
+         </span>
+         <br>
+         <label class="form-control">Password</label>
+         <input type="password" class="form-control" [(ngModel)]="user.password" [formControl]="pass" >
+         <span *ngIf="pass.valid==false && pass.touched" class="alert alert-danger">
+             password cannot be empty
+         </span>
+<br>
+         <button class="btn btn-success" >Login</button>
+     </form>
+     </div>
+ </span>
+ 
+ </div>

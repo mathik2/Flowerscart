@@ -1,0 +1,11 @@
+table{
+ background: lightblue;
+    margin-left: 30%;
+    margin-right: 50%;
+    width: 50%;
+    font-size: 2rem;
+
+}
+#price{
+text-align: end;
+}

@@ -1,0 +1,44 @@
+<!-- <div class="wrapper alert alert-success">
+    <div class="alert " *ngFor="let flower of flowerss">
+
+        Flower Id       &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    : {{flower.id}}
+        <br />
+        Flower Name      &nbsp; &nbsp;   : {{flower.name}}
+        <br />
+        Flower Description : {{flower.description}}
+        <br />
+        Flower Price     &nbsp; &nbsp;&nbsp; &nbsp;    : {{flower.price}}
+        <br />
+        Flower Quantity    &nbsp; &nbsp; : {{ flower.qty}}
+        <br>
+        <button class="btn btn-primary" (click)="AddFlowers(flower)">Add</button>
+
+    </div>
+    <ng-template #elseBlock>Out of stock</ng-template>
+</div> -->
+<table class="table  table-striped">
+    <thead class="thead-dark ">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">description</th>
+        <th scope="col">price</th>
+        <th scope="col">Quantity</th>
+        <th>Add to Cart</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flower of flowerss" >
+     
+        <td>{{flower.id}}</td>
+        <td> {{flower.name}}</td>
+        <td>{{flower.description}}</td>
+        <td>{{flower.price}}</td>
+        <td> {{ flower.qty}}</td>
+        <td>  <button class="btn btn-primary" (click)="AddFlowers(flower)">Add</button></td>
+      </tr>
+     
+    </tbody>
+  </table>
+  
+  

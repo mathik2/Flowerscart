@@ -1,0 +1,47 @@
+
+<!-- <div class="wrapper alert alert-success">   
+    <div class="alert alert-info" *ngFor = "let flower of flowers">
+               
+                    Flower Id : {{flower.id}}
+                    <br/>
+                    Flower Name : {{flower.name}}
+                     <br/>
+                     Flower Description : {{flower.description}} 
+                    <br/>
+                    Flower Price : {{flower.price}}
+                    <br/>
+                    Flower Quantity : {{ flower.qty}}
+                <br/>
+           
+                <div> Price : {{flower.qty*flower.price}}</div>
+            </div>
+          
+            <div >Total Price: {{getPrice()}}</div>
+</div> -->
+ <table class="table  table-striped">
+    <thead class="thead-dark ">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">description</th>
+        <th scope="col">price</th>
+        <th scope="col">Quantity</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let flower of flowers" >
+     
+        <td>{{flower.id}}</td>
+        <td> {{flower.name}}</td>
+        <td>{{flower.description}}</td>
+        <td>{{flower.price}}</td>
+        <td> {{ flower.qty}}</td>
+        <td> <button class="btn btn-primary" (click)="removeFlower(flower.id)">Remove</button></td> 
+      </tr>
+     <tr>
+         <td>  <button class="btn btn-success" onclick="alert('Your order placed sucessfully')">Place order</button></td>
+        <td id="price" colspan="8">Total Price: {{getPrice()}}</td>
+     </tr>
+    </tbody>
+  </table> 
